@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hurst Family Wonderland</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              title: ['"Berkshire Swash"', 'cursive'],
+              body: ['"Crimson Text"', 'serif'],
+            },
+            colors: {
+              'cardboard': '#e3dac1',
+              'cardboard-dark': '#c5bba4',
+              'parchment': '#fcf5e5',
+              'gold': '#d4af37',
+              'night-blue': '#1a2f4b',
+            },
+            boxShadow: {
+              'door': '2px 2px 5px rgba(0,0,0,0.3)',
+              'inner': 'inset 2px 2px 5px rgba(0,0,0,0.2)',
+            },
+            animation: {
+              'fade-in': 'fadeIn 1s ease-in-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #1a2f4b;
+      }
+      .perspective-container {
+        perspective: 1000px;
+      }
+      .backface-hidden {
+        backface-visibility: hidden;
+      }
+      .transform-style-3d {
+        transform-style: preserve-3d;
+      }
+      /* Custom scrollbar for the modal */
+      .parchment-scroll::-webkit-scrollbar {
+        width: 8px;
+      }
+      .parchment-scroll::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .parchment-scroll::-webkit-scrollbar-thumb {
+        background-color: #d4af37;
+        border-radius: 20px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
