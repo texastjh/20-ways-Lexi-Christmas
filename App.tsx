@@ -9,11 +9,12 @@ import { Message } from './types';
 const FALLBACK_BG = "https://images.unsplash.com/photo-1543589077-47d81606c1bf?q=80&w=2574&auto=format&fit=crop";
 
 // Default to the hosted GitHub image
-const DEFAULT_BG = "https://raw.githubusercontent.com/texastjh/20-ways-Lexi-Christmas/main/illustrated-family-hero.png";
+// Added ?v=final to force cache bust since the repo was previously private
+const DEFAULT_BG = "https://raw.githubusercontent.com/texastjh/20-ways-Lexi-Christmas/main/illustrated-family-hero.png?v=final";
 
 // Storage keys
 const STORAGE_KEY_STATE = 'hurst_advent_state';
-const STORAGE_KEY_BG = 'hurst_advent_bg_v5'; // Changed version to force refresh for user
+const STORAGE_KEY_BG = 'hurst_advent_bg_v8'; // Bumped to v8 to force reload
 
 const App: React.FC = () => {
   const [openedDoors, setOpenedDoors] = useState<number[]>([]);
