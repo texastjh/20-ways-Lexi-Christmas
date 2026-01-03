@@ -66,6 +66,27 @@
         background-color: #d4af37;
         border-radius: 20px;
       }
+
+      /* 
+         Robust Door Animation Logic 
+         This ensures that 'open' always wins over 'hover', 
+         and 'reset' (removing is-open) correctly falls back to 0deg.
+      */
+      .door-transform {
+        transform: rotateY(0deg);
+        transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+        transform-origin: left center;
+      }
+      
+      /* Only hover if NOT open (controlled by specificity/important below, or naturally here) */
+      .group:hover .door-transform {
+        transform: rotateY(-15deg);
+      }
+
+      /* Open state overrides everything */
+      .door-transform.is-open {
+        transform: rotateY(-110deg) !important;
+      }
     </style>
   <script type="importmap">
 {

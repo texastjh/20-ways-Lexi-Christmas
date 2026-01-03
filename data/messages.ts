@@ -3,9 +3,8 @@ import { Message, DoorPosition } from '../types';
 export const MESSAGES: Message[] = [
   {
     id: 1,
-    title: "Even when I don’t deserve it...",
+    title: "Even when I don’t deserve it, you patiently do so much for me and the kids",
     body: "Tonight you cleaned up the kitchen and the house after hearing me complain about not feeling well and not helping much. And this is all after getting dinner ready for the kids and helping Grace with piano!",
-    signature: "You patiently do so much for me and the kids"
   },
   {
     id: 2,
@@ -25,7 +24,7 @@ export const MESSAGES: Message[] = [
   {
     id: 5,
     title: "You’re the glue",
-    body: "Whether our immediate family or extended family, you’re the glue that keeps things together and makes it all work. It’s just not the same without you!",
+    body: "Whether our immediate family or extended family, you’re the glue that keeps things together and makes it all work. It’s just not the same without you! Your presence brings more peace, more laughter, more fun, and more happiness.",
   },
   {
     id: 6,
@@ -40,7 +39,7 @@ export const MESSAGES: Message[] = [
   {
     id: 8,
     title: "You have incredible intuition",
-    body: "I love being able to go to you with questions and thoughts, and trusting your innately good instincts.",
+    body: "I love being able to go to you with questions and thoughts, and trusting your innately good instincts. You live close to the spirit, and you have a great sense of intuition, and it has led our family on a wonderful path!",
   },
   {
     id: 9,
@@ -59,48 +58,48 @@ export const MESSAGES: Message[] = [
   },
   {
     id: 12,
-    title: "Fully involved in our children’s lives",
-    body: "From volunteering for classroom parties to helping with piano practice and organizing birthday parties, you are always there for them.",
+    title: "You are fully involved in our children’s lives",
+    body: "From volunteering for classroom parties to helping with piano practice and organizing birthday parties, I love how involved you are in our children’s lives (but as much as I love it, the kids might love it more)!",
   },
   {
     id: 13,
     title: "You put Him first",
-    body: "I always know that Christ comes first in your life.",
+    body: "I love that I don’t have to worry where your priorities are or what’s most important to you. I always know that Christ comes first in your life",
   },
   {
     id: 14,
     title: "You make life fun",
-    body: "You naturally bring people together and make together time memorable.",
+    body: "We just said goodbye to the Gardiners and my parents after a fun night together, and you are the reason 1. it happened and 2. Was fun! You naturally bring people together and make together time memorable and enjoyable through fun activities and most of all through your bright personality and infectious energy.",
   },
   {
     id: 15,
     title: "You work hard",
-    body: "Late nights of editing, cleaning the kitchen for the 3rd time in a day... your diligence never goes unnoticed.",
+    body: "You’ve built a business through talent, yes, but also through hard work. Late nights of editing, cleaning the kitchen for the 3rd time in a day, and long days of juggling successful shoots with school activities and needy children are all evidence of this.",
   },
   {
     id: 16,
-    title: "You do things I don’t know how to do",
-    body: "You carefully think through how the kids will perceive their gifts, adding that magical touch I often miss.",
+    title: "You do things for our family I don’t know how to do",
+    body: "Just tonight you asked me how I think the kids will each perceive their Christmas gifts, giving an accounting of what they’re each receiving and how it compares to the others. I would never have thought to do this. And even if I did, it wouldn’t have been as organized and intentional as what you have done—and that difference makes all the difference for our kids.",
   },
   {
     id: 17,
     title: "You are thoughtful",
-    body: "Nobody leaves something you planned without feeling loved.",
+    body: "Nobody brings a neighbor gift to our home without receiving a gift in return. Nobody leaves an activity that you were involved in planning without feeling loved. You care about people, and they know it!",
   },
   {
     id: 18,
-    title: "You are my best friend",
-    body: "Through all the chaos of raising a family, you remain my favorite person to talk to, laugh with, and dream with.",
+    title: "You give us balance",
+    body: "We are different in so many ways, and I am grateful for that wonderful blessing. You provide strength where I tend to be weak. You give perspective I don’t naturally have. You make me a better person and our family a better unit!",
   },
   {
     id: 19,
-    title: "You are patient",
-    body: "Even when things get hectic, your patience brings a sense of calm to our home that we all desperately need.",
+    title: "You have incredible faith",
+    body: "I have loved watching you as we encounter difficulties individually and as a family. You always put your faith in God and move forward, trusting in Him. Even in stressful situations you trust completely in God and reassure others that “things will work out as they should.”",
   },
   {
     id: 20,
-    title: "I love you",
-    body: "For all these reasons and a million more I haven't listed, I love you more than words can express. Merry Christmas, Lexi.",
+    title: "We love you!",
+    body: "We are grateful we get to have you in our lives! Thank you for making us better and loving us completely! Thank you for being you—you amaze us!",
   }
 ];
 

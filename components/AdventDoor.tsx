@@ -2,7 +2,6 @@ import React from 'react';
 import { AdventDoorProps } from '../types';
 
 // SVG Paths for various Christmas shapes
-// Updated to include requested items: Trumpet, Manger, Lamb, etc.
 const getMoldShape = (id: number) => {
   const shapes = [
     // 1. Christmas Tree
@@ -11,23 +10,23 @@ const getMoldShape = (id: number) => {
     "M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z",
     // 3. Bell
     "M12 3a6 6 0 00-6 6v5l-2 2v1h16v-1l-2-2V9a6 6 0 00-6-6zM12 22a2 2 0 002-2h-4a2 2 0 002 2z",
-    // 4. Trumpet (New)
+    // 4. Trumpet
     "M2 6v12h2V6H2zm4 0v12l6-4v4l8 4V2l-8 4v4L6 6z",
     // 5. Candy Cane
     "M9 6c0-2 2-4 4-4s4 2 4 4v12h-3V6c0-1-1-1-1-1s-1 0-1 1v12H9V6z",
-    // 6. Manger (New)
+    // 6. Manger
     "M2 14l2 6h16l2-6H2zm3-3l4 3 4-3 4 3 3-3v2H5v-2z",
     // 7. Snowflake
     "M12 2v20 M2 12h20 M5 5l14 14 M5 19L19 5",
     // 8. Snowman
     "M12 4a4 4 0 100 8 4 4 0 000-8zm0 8a6 6 0 100 12 6 6 0 000-12z",
-    // 9. Lamb (New)
+    // 9. Lamb
     "M17 7c-1.5 0-2.8.8-3.5 2-.7-1.2-2-2-3.5-2-2.5 0-4.5 2-4.5 4.5 0 .5.1 1 .2 1.5C4.8 13.6 4 14.7 4 16c0 2.2 1.8 4 4 4h9c2.2 0 4-1.8 4-4 0-1.8-1.1-3.3-2.7-3.8.1-.4.2-.8.2-1.2 0-2.5-2-4.5-4.5-4.5z",
     // 10. Mitten
     "M8 4a4 4 0 00-4 4v8a4 4 0 004 4h6a4 4 0 004-4V8a4 4 0 00-4-4H8z",
     // 11. Candle
     "M10 8h4v12h-4z M12 2l-1 4h2z",
-    // 12. Holly (Berries)
+    // 12. Holly
     "M12 10a2 2 0 100 4 2 2 0 000-4zm-4 4a2 2 0 100 4 2 2 0 000-4zm8 0a2 2 0 100 4 2 2 0 000-4z",
     // 13. Gingerbread Man
     "M12 2a3 3 0 00-3 3v2H6a2 2 0 00-2 2v4a2 2 0 002 2h2v5a2 2 0 002 2h4a2 2 0 002-2v-5h2a2 2 0 002-2v-4a2 2 0 00-2-2h-3V5a3 3 0 00-3-3z",
@@ -41,9 +40,9 @@ const getMoldShape = (id: number) => {
     "M12 4a8 8 0 100 16 8 8 0 000-16zM12 8a4 4 0 110 8 4 4 0 010-8z",
     // 18. Angel
     "M12 2a3 3 0 100 6 3 3 0 000-6z M6 10l6-2 6 2v10H6z",
-    // 19. Reindeer (Simple)
+    // 19. Reindeer
     "M12 10l-4-6v4l4 6 4-6V4l-4 6zM12 10v12",
-    // 20. Crown / King
+    // 20. Crown
     "M2 8l5 2 5-6 5 6 5-2v14H2V8z"
   ];
   return shapes[(id - 1) % shapes.length];
@@ -81,13 +80,9 @@ export const AdventDoor: React.FC<AdventDoorProps> = ({
         onOpen(message.id);
       }}
     >
-      {/* The Door (Rotates open) */}
+      {/* The Door (Rotates open) - using custom 'door-transform' class defined in index.html */}
       <div 
-        className={`relative w-full h-full transform-style-3d transition-transform duration-1000 ease-in-out origin-left ${
-            isOpen 
-            ? '[transform:rotateY(-110deg)]' 
-            : 'group-hover:[transform:rotateY(-15deg)]'
-        }`}
+        className={`relative w-full h-full transform-style-3d door-transform ${isOpen ? 'is-open' : ''}`}
       >
         
         {/* Back of the Door (Cardboard flap) */}
